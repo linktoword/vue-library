@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 
 // 引入创建的页面
 import Home from '../Home.vue'  //  ../ 父级目录  /根目录  ./当前目录
-import Explorer from '../Explorer.vue'
-import Cart from '../Cart.vue'
+import News from '../News.vue'
+import Story from '../Story.vue'
 import Me from '../Me.vue'
 import Main from '../Main.vue'
 import BookDetail from '../BookDetail.vue'
@@ -28,13 +28,13 @@ export default new VueRouter({
              path: 'home', //对应路径地址
              component: Home //和路由相关联的组件
            }, {
-             name: 'Explorer',
-             path: 'Explorer',
-             component: Explorer
+             name: 'News',
+             path: 'News',
+             component: News
            }, {
-             name: 'Cart',
-             path: 'Cart',
-             component: Cart
+             name: 'Story',
+             path: 'Story',
+             component: Story
            }, {
              name: 'Me',
              path: 'Me',

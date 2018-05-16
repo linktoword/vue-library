@@ -1,8 +1,9 @@
 <template>
   <!-- <div>首页</div> -->
-  <el-carousel :interval="4000" type="card" height="400px">
-    <el-carousel-item v-for="item in 6" :key="item">
-      <h3>{{ item }}</h3>
+  <el-carousel :interval="4000" type="card" height="200px">
+    <el-carousel-item v-for="item in Pic" :key="item">
+      <!-- <h3>{{ item }}</h3> -->
+      <img :src= item alt="">
     </el-carousel-item>
   </el-carousel>
 </template>
@@ -15,17 +16,25 @@
     margin: 0;
   }
   
-  .el-carousel__item:nth-child(2n) {
+  .el-carousel__item img {
     background-color: #99a9bf;
-  }
-  
-  .el-carousel__item:nth-child(2n+1) {
-    background-color: #d3dce6;
+    width: 100%;
+    height: 100%;
   }
 </style>
 
 <script>
   export default {
+    data(){
+      return {
+        Pic :[
+          '/src/assets/1.png', 
+          '/src/assets/2.png', 
+          '/src/assets/3.png', 
+          '/src/assets/4.png'
+        ]
+      }
+    }
     
   }
 </script>
