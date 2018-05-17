@@ -1,8 +1,8 @@
 <template>   
-    <div class="main-content">
+    <!-- <div class="main-content"> -->
       <!-- 用 router-view 渲染视图 -->
       <router-view></router-view>
-    </div>
+    <!-- </div> -->
 </template>
 
 <script>

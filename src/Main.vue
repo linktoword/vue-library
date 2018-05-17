@@ -4,7 +4,7 @@
       <router-view></router-view>
     <div class="nav">        
           <!-- 使用 router-link 指向定义的 path -->
-          <router-link class="nav-item" :to="{name: 'Home'}" tag="div">  <!--使用命名路由采用 ：to  -->
+          <router-link class="nav-item" :to="{name: 'Home'}" tag="div" exact>  <!--使用命名路由采用 ：to  -->
             <img class="picSet" :src="icon[0]" alt="首页">  <!-- tag指定渲染成的标签 -->
             <div>首页</div> 
           </router-link>
