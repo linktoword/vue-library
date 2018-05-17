@@ -1,4 +1,5 @@
 <template>
+  <!-- 主导航 -->
   <div id="app">
       <!-- 用 router-view 渲染视图 -->
       <router-view></router-view>
@@ -64,11 +65,11 @@ export default {
   flex: auto;
 }
 .nav-item img {
-  width: 50%;
-  height: 50%;
+  width: 50px;
+  height: 50px;
 }
 .active{
-  color: blue;
+  color: white;
   background: skyblue;
 }
 

@@ -1,23 +1,18 @@
 <template>
   <!-- <div>首页</div> -->
+  <div>
+  <top-list-nav></top-list-nav>
+  
+  <!-- 轮播插件 -->
   <el-carousel :interval="4000" type="card" height="200px">
-    <el-carousel-item v-for="item in Pic" :key="item">
-      <!-- <h3>{{ item }}</h3> -->
-      <img :src= item alt="">
+    <el-carousel-item v-for="item in Pic" :key="item.id">
+      <img :src= "item.url" alt="">
     </el-carousel-item>
   </el-carousel>
+</div>
 </template>
 <style>
-.el-carousel__item h3 {
-    color: #475669;
-    font-size: 14px;
-    opacity: 0.75;
-    line-height: 200px;
-    margin: 0;
-  }
-  
   .el-carousel__item img {
-    background-color: #99a9bf;
     width: 100%;
     height: 100%;
   }
@@ -28,10 +23,10 @@
     data(){
       return {
         Pic :[
-          '/src/assets/1.png', 
-          '/src/assets/2.png', 
-          '/src/assets/3.png', 
-          '/src/assets/4.png'
+          {url: '/src/assets/1.png', id: 1}, 
+          {url: '/src/assets/2.png', id: 2}, 
+          {url: '/src/assets/3.png', id: 3}, 
+          {url: '/src/assets/4.png', id: 4}
         ]
       }
     }
