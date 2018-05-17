@@ -1,76 +1,38 @@
 <template>
-  <!-- 主导航 -->
-  <div id="app">
-      <!-- 用 router-view 渲染视图 -->
-      <router-view></router-view>
-    <div class="nav">        
-          <!-- 使用 router-link 指向定义的 path -->
-          <router-link class="nav-item" :to="{name: 'Home'}" tag="div" exact>  <!--使用命名路由采用 ：to  -->
-            <img class="picSet" :src="icon[0]" alt="首页">  <!-- tag指定渲染成的标签 -->
-            <div>首页</div> 
-          </router-link>
-
-          <router-link class="nav-item" :to="{name: 'News'}" tag="div">
-            <img class="picSet" :src="icon[1]" alt="新闻">
-            <div>新闻</div> 
-          </router-link>
-        
-          <router-link class="nav-item" :to="{name: 'Story'}" tag="div">
-            <img class="picSet" :src= "icon[2]" alt="轻小说">
-            <div>轻小说</div> 
-          </router-link>
-        
-          <router-link class="nav-item" :to="{name: 'Me'}" tag="div">
-            <img class="picSet" :src="icon[3]" alt="个人">
-            <div>个人</div> 
-          </router-link>
-    </div>
-    
-  </div>
+<div id="app">
+  <!-- 用 router-view 渲染视图 -->
+  <router-view></router-view>
+    <mu-paper class="nav">
+      <mu-bottom-nav :value="bottomNav" shift @change="handleChange">
+        <!-- tag指定渲染成的标签 -->
+        <mu-bottom-nav-item class="nav-item" :to="{name: 'Home'}" tag="div" exact value="movies" title="Home" icon="home"/>
+        <mu-bottom-nav-item class="nav-item" :to="{name: 'News'}" tag="div" value="music" title="News" icon="explore"/>
+        <mu-bottom-nav-item class="nav-item" :to="{name: 'Story'}" tag="div" value="books" title="Story" icon="books"/>
+        <mu-bottom-nav-item class="nav-item" :to="{name: 'Me'}" tag="div" value="pictures" title="Me" icon="perm_identity"/>
+      </mu-bottom-nav>
+    </mu-paper>
+</div>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      icon: [
-        "/src/assets/首页.png",
-        "/src/assets/新闻.png",
-        "/src/assets/轻小说.png",
-        "/src/assets/个人.png"
-        ]
+      bottomNav: "movies",
+      bottomNavColor: "movies"
+    };
+  },
+  methods: {
+    handleChange(val) {
+      this.bottomNav = val;
     }
   }
-  
-}
+};
 </script>
-
-<style scoped>
-#app {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
+<style>
 .nav {
-  display: flex;
-  text-align: center;
-  color:#bfbfbf;
   position: fixed;
   bottom: 0px;
   width: 100%;
 }
-
-.nav-item {
-  flex: auto;
-}
-.nav-item img {
-  width: 50px;
-  height: 50px;
-}
-.active{
-  color: white;
-  background: skyblue;
-}
-
 </style>
