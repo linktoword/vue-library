@@ -1,23 +1,24 @@
 import Vue from 'vue'
 import App from './App.vue'
+import router from './config/routes'
 
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI);
 
-import router from './config/routes'
+
 
 import MuseUI from 'muse-ui'
 import 'muse-ui/dist/muse-ui.css'
 Vue.use(MuseUI)
 
-
+// 注册组件区
 import TopList from './components/top-list-nav.vue'//引入单文件组件
 Vue.component("top-list-nav", TopList) //注册全局组件
+// import HomeShow from './components/HomeShow.vue'
+// Vue.component("home-show", HomeShow)
 
 
-
-
-Vue.use(ElementUI);
 
 
 

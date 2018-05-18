@@ -5,6 +5,6 @@
 
 </style>
 
-<script>
+<script scoped>
   export default {}
 </script>
