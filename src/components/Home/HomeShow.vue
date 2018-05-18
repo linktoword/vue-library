@@ -61,7 +61,7 @@
 
 /* 主标题 加粗放大 */
 .H-S-app .H-S-top div {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 900;
 }
 
