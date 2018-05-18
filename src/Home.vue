@@ -1,11 +1,9 @@
 <template>
   <!-- <div>首页</div> -->
   <div>
-  <top-list-nav></top-list-nav>
-  
-  <!-- 轮播插件 -->
-  
-</div>
+    <!-- 插件在全局注册的 home页 -->
+    <top-list-nav></top-list-nav> 
+  </div>
 </template>
 <style>
   
