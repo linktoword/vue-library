@@ -39,7 +39,7 @@
 
 <script>
 // 导入展示组件 注册成局部组件
-// import HomeShow from './HomeShow.vue'
+import HomeShow from './HomeShow.vue'
 export default {
   components: {
 		"home-show" : HomeShow

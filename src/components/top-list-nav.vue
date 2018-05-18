@@ -8,7 +8,7 @@
   </mu-tabs>
     <!-- 推荐显示模块  tab1 -->
   <div v-if= "activeTab === 'tab1'">
-    <!-- <recommend-one></recommend-one> -->
+    <recommend-top></recommend-top>
 
     <!-- 轮播 -->
     <el-carousel :interval="4000" type="card" height="300px">
@@ -64,10 +64,12 @@
 
 <script>
 // 导入展示组件 注册成局部组件
+import RecommendTop from './Home/recommend1'
 import HomeShow from './HomeShow.vue'
 export default {
   components: {
-		"home-show" : HomeShow
+    "home-show" : HomeShow,
+    "recommend-top": RecommendTop
 	},
   data () {
     return {
