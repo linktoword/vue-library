@@ -88,8 +88,9 @@
 /* 图片自适应 */
 .H-S-app .H-S-main .H-S-list-item img {
   width: 100%;  
-  height: auto; 
-}
+  height: auto;
+  border-radius: 20px;  
+} 
 
 /* 作者字体样式 */
 .H-S-app .H-S-author {

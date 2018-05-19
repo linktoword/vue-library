@@ -13,10 +13,9 @@
   </div>
 
   <div v-if= "activeTab === 'tab2'">
-    <h2>Tab Two</h2>
-    <p>
-      这是第二个 tab
-    </p>
+    
+    <home-sort></home-sort>
+
   </div>
   <div v-if= "activeTab === 'tab3'">
     <h2>Tab Three</h2>
@@ -29,9 +28,11 @@
 
 <script>
 import RecommendTop from './Home/recommend.vue'
+import HomeSort from './Home/sort.vue'
 export default {
   components: {
-    "recommend-top": RecommendTop
+    "recommend-top": RecommendTop,
+    "home-sort": HomeSort
 	},
   data () {
     return {
