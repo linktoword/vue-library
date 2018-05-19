@@ -83,6 +83,7 @@
   flex: 0 1 auto;
   /* width: 33%; */
   padding: 10px;
+  font-weight: 700;
 }
 
 /* 图片自适应 */
@@ -93,9 +94,10 @@
 } 
 
 /* 作者字体样式 */
-.H-S-app .H-S-author {
+.H-S-app .H-S-main .H-S-list-item .H-S-author {
   font-size: 12px;
   color: rgb(102,102,102);
+  font-weight: 100;
 }
 
 </style>
