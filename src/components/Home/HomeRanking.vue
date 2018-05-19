@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="">
     <div class="wapper" v-for="Ranking in Rankings" :key= "Ranking.id">
       <div class="pic">
         <img :src= "Ranking.url" alt="">
       </div>
       <div class="text">
-        <div class="title">{{Ranking.title}}！</div>
+        <div class="title">{{Ranking.title}}</div>
         <div class="author commond">
           <i class="material-icons">account_circle</i>
           <div>{{Ranking.author}}</div>
@@ -57,6 +57,13 @@
    display: flex;
    flex-flow: column;
    margin: 70px 0 0 60px;
+ }
+
+ .wapper .text .title {
+   width: 320px;
+   text-overflow:ellipsis; /* 表示文本超出用省略号代替 */
+   white-space:nowrap;  /* 表示文本不换行 */
+   overflow:hidden;   /* 表示超出隐藏 */
  }
 
  .wapper .text  .commond {

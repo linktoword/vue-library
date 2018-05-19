@@ -41,17 +41,41 @@ export default {
           url: '/src/assets/HomeRanking/Ranking_01.png',
           title: '猪不上我！',
           author: '川中康嗣',
-          label: '欢乐向、爱情',
+          label: '欢乐向/爱情',
           time: '2018-05-16',
           id: 1
         },
         {
-          url: '/src/assets/HomeRanking/Ranking_01.png',
-          title: '猪不上我！',
-          author: '川中康嗣',
-          label: '欢乐向、爱情',
+          url: '/src/assets/HomeRanking/Ranking_02.png',
+          title: '不说爱你就会死',
+          author: '三生',
+          label: '爱情/欢乐向',
+          time: '2018-05-12',
+          id: 2
+        },
+        {
+          url: '/src/assets/HomeRanking/Ranking_03.png',
+          title: '好比是最终迷宫爱的主打歌',
+          author: '三生',
+          label: '冒险/魔法/轻小说',
           time: '2018-05-16',
-          id: 1
+          id: 3
+        },
+        {
+          url: '/src/assets/HomeRanking/Ranking_04.png',
+          title: '东京都立咒术高手',
+          author: '三生',
+          label: '校园/魔法',
+          time: '2018-05-14',
+          id: 4
+        },
+        {
+          url: '/src/assets/HomeRanking/Ranking_05.png',
+          title: '白雪小姐是上门女仆',
+          author: '三生',
+          label: '节操/生活',
+          time: '2018-05-13',
+          id: 5
         }
       ]   
     }
