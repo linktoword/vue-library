@@ -13,15 +13,13 @@
   </div>
 
   <div v-if= "activeTab === 'tab2'">
-    
+    <!-- 分类展示组件 -->
     <home-sort></home-sort>
-
   </div>
   <div v-if= "activeTab === 'tab3'">
-    <h2>Tab Three</h2>
-    <p>
-      这是第三个 tab
-    </p>
+   <!-- 轮播组件 -->
+    <home-swiper></home-swiper>
+
   </div>
 </div>
 </template>
@@ -29,10 +27,12 @@
 <script>
 import RecommendTop from './Home/recommend.vue'
 import HomeSort from './Home/sort.vue'
+import Swiper from './Home/Swiper.vue'
 export default {
   components: {
     "recommend-top": RecommendTop,
-    "home-sort": HomeSort
+    "home-sort": HomeSort,
+    "home-swiper": Swiper
 	},
   data () {
     return {

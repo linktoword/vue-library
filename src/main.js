@@ -15,8 +15,13 @@ Vue.use(MuseUI)
 // 注册组件区
 import TopList from './components/top-list-nav.vue'//引入单文件组件
 Vue.component("top-list-nav", TopList) //注册全局组件
-// import HomeShow from './components/HomeShow.vue'
-// Vue.component("home-show", HomeShow)
+
+
+// require('swiper/dist/css/swiper.css')
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+import 'swiper/dist/css/swiper.css'
+Vue.use(VueAwesomeSwiper)
+
 
 
 
