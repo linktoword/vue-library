@@ -1,4 +1,6 @@
 <template>
+
+<!-- 展示组件 -->
   <div class="H-S-app">
 
     <!-- 标题 -->

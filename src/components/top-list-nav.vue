@@ -17,7 +17,7 @@
     <home-sort></home-sort>
   </div>
   <div v-if= "activeTab === 'tab3'">
-   <!-- 轮播组件 -->
+    <home-ranking></home-ranking>
 
   </div>
 </div>
@@ -26,10 +26,12 @@
 <script>
 import RecommendTop from './Home/recommend.vue'
 import HomeSort from './Home/sort.vue'
+import HomeRanking from './Home/HomeRanking.vue'
 export default {
   components: {
     "recommend-top": RecommendTop,
     "home-sort": HomeSort,
+    "home-ranking": HomeRanking
 	},
   data () {
     return {
