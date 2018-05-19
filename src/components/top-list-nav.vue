@@ -18,7 +18,6 @@
   </div>
   <div v-if= "activeTab === 'tab3'">
    <!-- 轮播组件 -->
-    <home-swiper></home-swiper>
 
   </div>
 </div>
@@ -27,12 +26,10 @@
 <script>
 import RecommendTop from './Home/recommend.vue'
 import HomeSort from './Home/sort.vue'
-import Swiper from './Home/Swiper.vue'
 export default {
   components: {
     "recommend-top": RecommendTop,
     "home-sort": HomeSort,
-    "home-swiper": Swiper
 	},
   data () {
     return {

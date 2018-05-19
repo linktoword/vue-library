@@ -1,10 +1,7 @@
 <!-- The ref attr used to find the swiper instance -->
 <template>
-  <swiper :options="swiperOption" ref="mySwiper" >
+  <swiper :options= "swiperOption" ref= "mySwiper" >
     <!-- slides -->
-    <swiper-slide>
-      <img src="/src/assets/LB/LB_01.jpg" alt="">
-    </swiper-slide>
     <swiper-slide>
       <img src="/src/assets/LB/LB_02.jpg" alt="">
     </swiper-slide>
@@ -27,6 +24,20 @@
     name: 'carrousel',
     data() {
       return {
+        LBPics: [
+          {
+            url: '/src/assets/LB/LB_05.jpg',
+            id: 5
+          },
+          {
+            url: '/src/assets/LB/LB_06.jpg',
+            id: 6
+          },
+          {
+            url: '/src/assets/LB/LB_07.jpg',
+            id: 7
+          }
+        ],
         swiperOption: {
           // some swiper options/callbacks
           // 所有的参数同 swiper 官方 api 参数
@@ -65,7 +76,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped >
 img {
   width: 100%;
   height: auto;

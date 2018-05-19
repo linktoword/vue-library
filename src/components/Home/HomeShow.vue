@@ -11,9 +11,9 @@
       <div class="H-S-main">
 
         <!-- 循环体 -->
-        <div class="H-S-list-item" v-for="list in HSlists" :key="list.id" :style="{width: weightSize}">
-          <img :src="list.url">
-          <div>{{list.title}}</div>
+        <div class="H-S-list-item" v-for= "list in HSlists" :key= "list.id" :style= "{width: weightSize}">
+          <img :src= "list.url">
+          <div>{{ list.title }}</div>
           <div class="H-S-author" v-if= "showAuthor">作者：{{list.author}}</div>
         </div> 
 

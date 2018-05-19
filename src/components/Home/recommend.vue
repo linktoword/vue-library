@@ -1,11 +1,16 @@
 <template>
 <div>
     <!-- 轮播 -->
-    <el-carousel :interval="4000" type="card" height="300px">
+    <!-- 饿了吗的轮播插件 -->
+    <!-- <el-carousel :interval="4000" type="card" height="300px">
       <el-carousel-item v-for= "item in Pic" :key= "item.id">
         <img :src= "item.url">
       </el-carousel-item>
-    </el-carousel>
+    </el-carousel> -->
+
+    <!-- swiper轮播插件 -->
+    <home-swiper ></home-swiper>
+    
 
     <!-- 近期必看 -->
     <home-show  :HSlists = "HSlists"
@@ -40,19 +45,22 @@
 <script>
 // 导入展示组件 注册成局部组件
 import HomeShow from './HomeShow.vue'
+import Swiper from './Swiper.vue'
+
 export default {
   components: {
-		"home-show" : HomeShow
+    "home-show" : HomeShow,
+    "home-swiper": Swiper    
 	},
   data () {
     return {
       activeTab: 'tab1',
       //轮播图片路径
       Pic :[
-          {url: '/src/assets/1.png', id: 1}, 
-          {url: '/src/assets/2.png', id: 2}, 
-          {url: '/src/assets/3.png', id: 3}, 
-          {url: '/src/assets/4.png', id: 4}
+          {url: '/src/assets/LB/LB_01.jpg', id: 1}, 
+          {url: '/src/assets/LB/LB_02.jpg', id: 2}, 
+          {url: '/src/assets/LB/LB_03.jpg', id: 3}, 
+          {url: '/src/assets/LB/LB_04.jpg', id: 4}
         ],
         // 近期必看栏资源
         showAuthor: true,
