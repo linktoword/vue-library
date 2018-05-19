@@ -17,7 +17,7 @@
     <home-sort></home-sort>
   </div>
   <div v-if= "activeTab === 'tab3'">
-    <home-ranking></home-ranking>
+    <home-ranking :Rankings= "Rankings"></home-ranking>
 
   </div>
 </div>
@@ -35,7 +35,25 @@ export default {
 	},
   data () {
     return {
-      activeTab: 'tab1'    
+      activeTab: 'tab1' ,
+      Rankings: [
+        {
+          url: '/src/assets/HomeRanking/Ranking_01.png',
+          title: '猪不上我！',
+          author: '川中康嗣',
+          label: '欢乐向、爱情',
+          time: '2018-05-16',
+          id: 1
+        },
+        {
+          url: '/src/assets/HomeRanking/Ranking_01.png',
+          title: '猪不上我！',
+          author: '川中康嗣',
+          label: '欢乐向、爱情',
+          time: '2018-05-16',
+          id: 1
+        }
+      ]   
     }
   },
   methods: {

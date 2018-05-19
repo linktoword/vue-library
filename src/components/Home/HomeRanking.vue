@@ -1,35 +1,34 @@
 <template>
-  <div class="wapper">
-    <div class="pic">
-      <img src="/src/assets/HomeRanking/Ranking_01.png" alt="">
+  <div>
+    <div class="wapper" v-for="Ranking in Rankings" :key= "Ranking.id">
+      <div class="pic">
+        <img :src= "Ranking.url" alt="">
+      </div>
+      <div class="text">
+        <div class="title">{{Ranking.title}}！</div>
+        <div class="author commond">
+          <i class="material-icons">account_circle</i>
+          <div>{{Ranking.author}}</div>
+        </div>
+        <div class="label commond">
+          <i class="material-icons">loyalty</i>
+          <div>{{Ranking.label}}</div>
+        </div>
+        <div class="time commond">
+          <i class="material-icons">schedule</i>
+          <div>{{Ranking.time}}</div>
+        </div>
+      </div>
+      <div class="sequence">{{Ranking.id}}</div>
     </div>
-    <div class="text">
-      <div class="title">猪不上我！</div>
-      <div class="author commond">
-        <i class="material-icons">account_circle</i>
-        <div>川中康嗣</div>
-      </div>
-      <div class="label commond">
-        <i class="material-icons">loyalty</i>
-        <div>欢乐向/爱情</div>
-      </div>
-      <div class="time commond">
-        <i class="material-icons">schedule</i>
-        <div>2018-05-16</div>
-      </div>
-    </div>
-    
-    <div class="sequence">1</div>
   </div>
 </template>
 
  <script>
 
  export default {
-   data() {
-     return {
-
-     }
+   props: {
+     Rankings: Array
    }
  }
    
