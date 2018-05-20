@@ -1,6 +1,13 @@
 <template>
-  <div class="">
-    <div class="wapper" v-for="Ranking in Rankings" :key= "Ranking.id">
+  <div class="HR-wapper">
+    <div class="HR-top">
+      <ul>
+        <li>人气排行</li>
+        <li>吐槽排行</li>
+        <li>订阅排行</li>
+      </ul>
+    </div>
+    <div class="wapper" v-for="(Ranking, index ) in Rankings" :key= "Ranking.id">
       <div class="pic">
         <img :src= "Ranking.url" alt="">
       </div>
@@ -19,7 +26,7 @@
           <div>{{Ranking.time}}</div>
         </div>
       </div>
-      <div class="sequence">{{Ranking.id}}</div>
+      <div class="sequence" :class="classChange(index)">{{Ranking.id}}</div>
     </div>
   </div>
 </template>
@@ -29,11 +36,46 @@
  export default {
    props: {
      Rankings: Array
+   },
+   methods: {
+     classChange : function(index) {
+       return {
+         sequenceOne: index === 0 && true,
+         sequenceTwo: index === 1 && true,
+         sequenceThree: index === 2 && true,
+         sequenceFour: index >= 3 && true 
+       }
+     }
    }
  }
    
  </script>
  <style scoped>
+ .HR-wapper .HR-top {
+   display: flex;
+   flex-flow: row-reverse;
+ }
+
+ .HR-wapper .HR-top ul {
+   display: flex;
+ }
+
+ .HR-wapper .HR-top ul li {
+   list-style: none;
+   font-size: 30px;
+   border-right: 2px solid rgb(177 , 177, 177);
+   padding:  0 10px; 
+   color: rgb(102, 102, 102);
+ }
+
+ .HR-wapper .HR-top ul li:first-child {
+   color: rgb(87, 156, 244);
+ }
+
+ .HR-wapper .HR-top ul li:last-child {
+   border-right: none;
+ }
+
  .wapper {
    display: flex;
    height: 376px;
@@ -83,7 +125,7 @@
 .wapper .sequence {
   width: 100px;
   height: 100px;
-  background: rgb(255, 75, 75);
+  /* background: rgb(233, 233, 233); */
   border-bottom-left-radius: 100%;
   text-align: center;
   line-height: 100px;
@@ -94,6 +136,20 @@
   top: 0;
   right: 0;
 }
- 
+
+.sequenceFour {
+  background: rgb(233, 233, 233);
+}
+.sequenceOne{
+  background: rgb(255, 75, 75);
+}
+
+.sequenceTwo {
+  background: rgb(255, 128, 4);
+}
+
+.sequenceThree {
+  background: rgb(255, 192, 0);
+}
+
  </style>
- 
