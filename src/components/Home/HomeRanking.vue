@@ -1,4 +1,5 @@
 <template>
+<!-- Home页排行榜组件 -->
   <div class="HR-wapper">
     <div class="HR-top">
       <ul>
@@ -51,9 +52,16 @@
    
  </script>
  <style scoped>
+.HR-wapper {
+  background: #eee;
+}
+
+/* 排行榜切换模块 */
  .HR-wapper .HR-top {
    display: flex;
    flex-flow: row-reverse;
+   border-bottom: 1px solid rgb(203, 203, 203);
+   background: white;
  }
 
  .HR-wapper .HR-top ul {
@@ -76,11 +84,17 @@
    border-right: none;
  }
 
+ /* 排行榜显示模块 */
+
  .wapper {
    display: flex;
    height: 376px;
    width: 100%;
    position: relative;
+   margin-bottom: 10px;
+   padding-top: 15px;
+   background: white;   
+   /* box-shadow: 0 2px 0 10px #eee; */
  }
 
  .pic,

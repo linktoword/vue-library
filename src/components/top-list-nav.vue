@@ -17,6 +17,7 @@
     <home-sort></home-sort>
   </div>
   <div v-if= "activeTab === 'tab3'">
+    <!-- home页排行榜组件 -->
     <home-ranking :Rankings= "Rankings"></home-ranking>
 
   </div>
@@ -36,6 +37,8 @@ export default {
   data () {
     return {
       activeTab: 'tab1' ,
+
+      // home页排行榜数据
       Rankings: [
         {
           url: '/src/assets/HomeRanking/Ranking_01.png',

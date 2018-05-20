@@ -1,5 +1,7 @@
 <template>
-  <div>分类</div>
+  <div>分类
+  <top-list-nav></top-list-nav>    
+  </div>
 </template>
 <style>
 
