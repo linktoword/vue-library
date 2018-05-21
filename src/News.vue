@@ -1,12 +1,17 @@
 <template>
-  <div>分类
-  <top-list-nav></top-list-nav>    
-  </div>
+  <nav>
+    <news-top-nav></news-top-nav>  
+  </nav>
 </template>
 <style>
 
 </style>
 
 <script>
-  export default {}
+import NewsTopNav from './components/News/NewsTopNav.vue'
+  export default {
+    components: {
+      'news-top-nav': NewsTopNav
+    }
+  }
 </script>
