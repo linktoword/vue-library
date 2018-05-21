@@ -25,7 +25,7 @@ export default new VueRouter({
         children: [
            {
              name: 'Home', //路由的名字 使用时引用名字即可 
-             path: '/', //对应路径地址
+             path: '', //对应路径地址
              component: Home //和路由相关联的组件            
              
            }, {

@@ -1,24 +1,37 @@
 <template>
-  <div class="wapper">
-    <div class="time">5月20日 星期日</div>
-    <div class="content">
-      <img src="/src/assets/News/news_01.png" alt="">
+
+  <div class="wapper" >
+    <div class="time">{{time}}</div>
+    <div class="content" v-for= "item in NewsShowLists" :key="item.id">
+      <img :src= "item.url" alt="">
       <div class="text">
-        <div class="title">丈夫借上百万日元氪手游！妻子怒卖丈夫稀有角色</div>
+        <div class="title">{{item.title}}</div>
         <div class="bottom">
           <div class="left">
-            <img src="/src/assets/News/Newstx_03.png" alt="">
-            <div>夏息</div>
+            <img :src="item.txurl" alt="">
+            <div>{{item.author}}</div>
           </div>
           <div class="right">
             <i class="material-icons">thumb_up</i>
-            <span>125</span>
+            <span>{{item.num}}</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+
 </template>
+
+<script>
+  export default {
+    props:{
+      NewsShowLists: Array,
+      time: String
+      }
+
+  }
+
+</script>
 
 <style scoped>
 .wapper .time {
