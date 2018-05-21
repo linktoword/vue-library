@@ -25,9 +25,9 @@
 </template>
 
 <script>
-import RecommendTop from './Home/recommend.vue'
-import HomeSort from './Home/sort.vue'
-import HomeRanking from './Home/HomeRanking.vue'
+import RecommendTop from './recommend.vue'
+import HomeSort from './sort.vue'
+import HomeRanking from './HomeRanking.vue'
 export default {
   components: {
     "recommend-top": RecommendTop,

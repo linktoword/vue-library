@@ -9,6 +9,7 @@
   </mu-tabs>
   <div v-if= "activeTab === 'tab1'">
     <news-swiper></news-swiper>
+    <news-show></news-show>
   </div>
 
   <div v-if= "activeTab === 'tab2'">
@@ -28,9 +29,11 @@
 </template>
 <script>
 import NewsSwiper from './Swiper.vue'
+import NewsShow from './NewsShow.vue'
 export default {
   components: {
-    'news-swiper': NewsSwiper
+    'news-swiper': NewsSwiper,
+    'news-show': NewsShow
   },
   data () {
     return {

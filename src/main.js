@@ -15,7 +15,7 @@ Vue.use(MuseUI)
 
 
 // 注册组件区
-import TopList from './components/top-list-nav.vue'//引入单文件组件
+import TopList from './components/Home/top-list-nav.vue'//引入单文件组件
 Vue.component("top-list-nav", TopList) //注册全局组件
 
 
