@@ -47,7 +47,15 @@ module.exports = {
       {
         test: /\.(woff|svg|eot|ttf)\??.*$/,
         loader: 'url-loader'
-      }
+      },
+      {
+        test: /\.sass$/,
+        loaders: ['style', 'css', 'sass']
+      },
+      {
+        test: /\.less$/,
+        loader: "style-loader!css-loader!less-loader",
+      },
 
     ]
   },

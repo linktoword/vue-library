@@ -29,13 +29,6 @@ Vue.use(VueAwesomeSwiper)
 
 
 
-
-
-
-
-
-
-
 new Vue({
   el: '#app',
   // 将路由实例添加到Vue实例中

@@ -1,10 +1,18 @@
 <template>
-  <div>个人</div>
+  <div class="wapper">
+me
+  </div>
 </template>
 <style>
 
 </style>
 
 <script>
-  export default {}
+  export default {
+   
+  }
 </script>
+
+
+
+

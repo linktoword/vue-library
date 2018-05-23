@@ -18,14 +18,25 @@
 export default {
   data() {
     return {
-      bottomNav: "Home",
+      // bottomNav: "Home",
       bottomNavColor: "Home"
     };
+  },
+  //修复不在home页面刷新 下方按钮改变为home页突出 上方仍是非home页
+  computed: {
+    bottomNav:{
+      get : function () {
+      return this.$route.name //当前页面的路由name ： 例如News      
+      }
+      ,
+      set : function () {
+      }
+    }
   },
   methods: {
     handleChange(val) {
       this.bottomNav = val;
-    }
+    }   
   }
 };
 </script>

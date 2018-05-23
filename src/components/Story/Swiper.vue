@@ -1,5 +1,4 @@
 <template>
-
     <div id="container">
       <swiper :options="swiperOption" ref="mySwiper">
         <swiper-slide class="swiper-slide games">
@@ -17,8 +16,7 @@
         <div class="swiper-pagination"  slot="pagination"></div>
         <div class="swiper-button-prev" slot="button-prev"></div>
         <div class="swiper-button-next" slot="button-next"></div>
-      </swiper>
-      
+      </swiper>     
     </div>
 </template>
 
