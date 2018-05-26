@@ -11,6 +11,7 @@
     <div class="wapper" v-for="(Ranking, index ) in Rankings" :key= "Ranking.id">
       <div class="pic">
         <img :src= "Ranking.url" alt="">
+        <!-- <router-link :to="{name: 'BookDetail'}" tag="img" :src= "Ranking.url"></router-link> -->
       </div>
       <div class="text">
         <div class="title">{{Ranking.title}}</div>

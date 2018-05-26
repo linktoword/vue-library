@@ -44,12 +44,12 @@
 
 <script>
 // 导入展示组件 注册成局部组件
-import HomeShow from './HomeShow.vue'
+// import HomeShow from './HomeShow.vue'
 import Swiper from './Swiper.vue'
 
 export default {
   components: {
-    "home-show" : HomeShow,
+    // "home-show" : HomeShow,
     "home-swiper": Swiper    
 	},
   data () {

@@ -18,6 +18,10 @@ Vue.use(MuseUI)
 import TopList from './components/Home/top-list-nav.vue'//引入单文件组件
 Vue.component("top-list-nav", TopList) //注册全局组件
 
+import HomeShow from './components/Home/HomeShow.vue'
+Vue.component("home-show", HomeShow)
+
+
 
 
 // require('swiper/dist/css/swiper.css')

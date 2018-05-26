@@ -28,15 +28,18 @@ export default new VueRouter({
              path: '', //对应路径地址
              component: Home //和路由相关联的组件            
              
-           }, {
+           },
+            {
              name: 'News',
              path: 'News',
              component: News
-           }, {
+           },
+            {
              name: 'Story',
              path: 'Story',
              component: Story
-           }, {
+           }, 
+           {
              name: 'Me',
              path: 'Me',
              component: Me
