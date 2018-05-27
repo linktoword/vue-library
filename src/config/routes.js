@@ -20,7 +20,7 @@ export default new VueRouter({
       // 将页面组件与 path 指定的路由关联
       {
         name: 'Main',
-        path: "/",
+        path: "",
         component: Main,
         children: [
            {
