@@ -4,9 +4,6 @@
 
   </div>
 </template>
-<style>
-
-</style>
 
 <script>
 import Landing from './components/Me/Landing'
@@ -17,7 +14,8 @@ import Landing from './components/Me/Landing'
    
   }
 </script>
-
-
-
-
+<style scoped>
+.wapper {
+  background: #eee;
+}
+</style>

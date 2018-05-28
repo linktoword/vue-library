@@ -5,8 +5,8 @@
 
         <!-- 图标栏 -->
         <div class="top">
-           <div class="icon-wapper"><mu-icon value="messages" color="#ddd" size="70"></mu-icon></div>
-           <div class="icon-wapper"><mu-icon value="settings" color="#ddd" size="70"></mu-icon></div>
+           <div class="icon-wapper"><mu-icon value="messages" color="#ddd" :size= "size"></mu-icon></div>
+           <div class="icon-wapper"><mu-icon value="settings" color="#ddd" :size= "size"></mu-icon></div>
         </div>
 
         <!-- 登陆头像栏 -->
@@ -15,20 +15,30 @@
           <div class="land-text">请登录</div>
           <div class="land-description">登陆后可以使用漫画订阅、发表评论等，我们还会提醒你订阅的作品有更新哦</div>
         </div>
-
-        
       </div>
-
-
     </div>
+    <me-person></me-person>
 
   </div>
 </template>
+<script>
+import MePerson from './Person'
+  export default {
+    components: {
+      "me-person": MePerson
+    },
+    data () {
+     return {
+        size: 70
+     }
+    }
+  }
+</script>
+
 <style scoped>
 .landing-wapper {
   width: 100%;
   height: 680px;
-  border: 1px solid blue;
   background-image: url(/src/assets/Me/FMBJ.png);
   background-size: 100% 680px;
 }
