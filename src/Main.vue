@@ -3,7 +3,7 @@
   <!-- 用 router-view 渲染视图 -->
   <router-view></router-view>
     <mu-paper class="nav">
-      <mu-bottom-nav :value="bottomNav" shift @change="handleChange">
+      <mu-bottom-nav :value="bottomNav" shift @change="handleChange" class="nav-wapper">
         <!-- tag指定渲染成的标签 -->
         <mu-bottom-nav-item class="nav-item" :to="{name: 'Home'}" tag="div"  value="Home" title="Home" icon="home" replace />
         <mu-bottom-nav-item class="nav-item" :to="{name: 'News'}" tag="div" value="News" title="News" icon="explore" replace/>
@@ -46,4 +46,5 @@ export default {
   bottom: 0px;
   width: 100%;
 }
+
 </style>

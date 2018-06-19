@@ -86,7 +86,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,//默认是true修改了
       compress: {
         warnings: false
       }

@@ -13,7 +13,7 @@ import BookDetail from '../BookDetail.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    mode: 'history',  //路由的模式
+    //mode: 'history',  //路由的模式
     base: __dirname, //基路径 在HTML5history模式下使用base选项后 所有的to属性都不需要写基路径
     linkActiveClass: "active", //点击一个vlink触发选中class
     routes: [

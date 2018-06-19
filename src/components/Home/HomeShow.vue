@@ -15,7 +15,7 @@
         <!-- 循环体 -->
         <div class="H-S-list-item" v-for= "list in HSlists" :key= "list.id" :style= "{width: weightSize}">
           <img :src= "list.url">
-          <div>{{ list.title }}</div>
+          <div class="title">{{ list.title }}</div>
           <div class="H-S-author" v-if= "showAuthor">作者：{{list.author}}</div>
         </div> 
 
@@ -63,14 +63,17 @@
 
 /* 主标题 加粗放大 */
 .H-S-app .H-S-top div {
-  font-size: 20px;
+  height: 60px;
+  font-size: 45px;
   font-weight: 900;
 }
 
 /* 图标样式 */
 .H-S-app i {
   color: red;
-  margin: 0 10px;
+  line-height: 60px;
+  font-size: 60px;
+  margin: 0 20px;
 }
 
 /* 使图片排成一行 两端对齐，项目之间的间隔都相等*/ 
@@ -95,11 +98,24 @@
   border-radius: 20px;  
 } 
 
+/*标题样式*/
+.H-S-app .H-S-main .H-S-list-item .title {
+  font-size: 39px;
+
+  /*单行文本超出隐藏*/
+  overflow:hidden;
+  text-overflow:ellipsis; 
+  white-space: nowrap;
+}
+
 /* 作者字体样式 */
 .H-S-app .H-S-main .H-S-list-item .H-S-author {
-  font-size: 12px;
+  font-size: 30px;
   color: rgb(102,102,102);
   font-weight: 100;
+   overflow:hidden;
+  text-overflow:ellipsis; 
+  white-space: nowrap;
 }
 
 </style>
