@@ -51,4 +51,5 @@ export default {
   bottom: 0px;
   width: 100%;
 }
+
 </style>
