@@ -171,7 +171,7 @@ export default {
 
 /* 使区块间有间隔 */
 .area {
-  margin: 20px 0;
+  margin: .3rem 0;
 
 }
 

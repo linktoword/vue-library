@@ -32,24 +32,31 @@
 .item {
   display: flex;
   width: 100%;
-  height: 135px;
+  padding: .5rem;
+  /* height: 135px; */
   align-items: center;
   border-top: 1px solid #aaa;
   position: relative;
 }
 
 .item .img-wapper {
-  width: 78px;
-  height: 78px;
+  /* width: 1rem;
+  height: 1rem; */
   border-radius: 50%;
-  margin: 0 25px  0 30px;
+  /* margin: 0 1rem  0 1rem; */
+}
+
+.item .img-wapper img {
+  width: 2rem;
+  height: 2rem;
+  margin: .5rem 1rem 0 0;
 }
 
 .item .text {
-  font-size: 40px;
+  font-size: 1.5rem;
 }
 .item .icon {
   position: absolute;
-  right: 35px;
+  right: 0;
 }
 </style>

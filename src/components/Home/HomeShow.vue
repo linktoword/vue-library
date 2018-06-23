@@ -15,7 +15,7 @@
         <!-- 循环体 -->
         <div class="H-S-list-item" v-for= "list in HSlists" :key= "list.id" :style= "{width: weightSize}">
           <img :src= "list.url">
-          <div>{{ list.title }}</div>
+          <div class="H-S-title">{{ list.title }}</div>
           <div class="H-S-author" v-if= "showAuthor">作者：{{list.author}}</div>
         </div> 
 
@@ -51,26 +51,26 @@
 <style>
 .H-S-app {
   border-bottom: 1px solid rgba(100, 100, 100, .2);
-  box-shadow: 0 2px 10px 2px rgb(114, 114, 114);
+  /* box-shadow: 0 2px 10px 2px rgb(114, 114, 114); */
   /* flex布局  子项目沿垂直方向从上往下排列 */
   display: flex;
   flex-direction: column; 
 }
 .H-S-app .H-S-top {
   display: flex;
-  margin: 10px 0;
+  margin: .2rem 0;
 }
 
 /* 主标题 加粗放大 */
 .H-S-app .H-S-top div {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 900;
 }
 
 /* 图标样式 */
 .H-S-app i {
   color: red;
-  margin: 0 10px;
+  margin: 0 .2rem;
 }
 
 /* 使图片排成一行 两端对齐，项目之间的间隔都相等*/ 
@@ -84,7 +84,7 @@
 .H-S-app .H-S-main .H-S-list-item {
   flex: 0 1 auto;
   /* width: 33%; */
-  padding: 10px;
+  padding: .2rem;
   font-weight: 700;
 }
 
@@ -92,14 +92,25 @@
 .H-S-app .H-S-main .H-S-list-item img {
   width: 100%;  
   height: auto;
-  border-radius: 20px;  
+  border-radius: .8rem;  
 } 
+
+/* 每个图片标题 */
+.H-S-app .H-S-main .H-S-list-item .H-S-title {
+  font-size: 1rem;
+   text-overflow:ellipsis; /* 表示文本超出用省略号代替 */
+   white-space:nowrap;  /* 表示文本不换行 */
+   overflow:hidden;   /* 表示超出隐藏 */
+}
 
 /* 作者字体样式 */
 .H-S-app .H-S-main .H-S-list-item .H-S-author {
-  font-size: 12px;
+  font-size: .8rem;
   color: rgb(102,102,102);
   font-weight: 100;
+   overflow:hidden;
+  text-overflow:ellipsis; 
+  white-space: nowrap;
 }
 
 </style>

@@ -44,9 +44,9 @@ import TabNews from './News'
 <style scoped>
 
 .button-wapper {
-  height: 105px;
+  height: 3rem;
   display: flex;
-  margin: 25px 35px;
+  margin: 1rem 1rem;
   border: 1px solid rgb(1, 144, 255);
   border-radius: 5px;
   background: #fff;
@@ -56,9 +56,9 @@ import TabNews from './News'
 .tab {
   flex: auto;
   text-align: center;
-  line-height: 105px;
+  line-height: 3rem;
   color:rgb(1, 144, 255);
-  font-size: 35px;
+  font-size: 1.5rem;
 }
 
 .active {

@@ -29,7 +29,7 @@ import MePerson from './Person'
     },
     data () {
      return {
-        size: 70
+        size: 30
      }
     }
   }
@@ -38,9 +38,9 @@ import MePerson from './Person'
 <style scoped>
 .landing-wapper {
   width: 100%;
-  height: 680px;
+  /* height: 20rem; */
   background-image: url(/src/assets/Me/FMBJ.png);
-  background-size: 100% 680px;
+  background-size: 100% 100%;
 }
 
 .liner {
@@ -51,15 +51,16 @@ import MePerson from './Person'
 
 .liner > .top {
   width: 100%;
-  height: 135px;
+  height: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
 }
 
 .liner > .top > .icon-wapper {
-  width: 100px;
-  height: 100px;
+  /* width: 2rem; */
+  /* height: 2rem; */
   border-radius: 50%;
   background: rgba(0, 0, 0, .3);
   display: flex;
@@ -73,22 +74,23 @@ import MePerson from './Person'
 }
 
 .main img {
-  width: 194px;
-  height: 194px;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  border: 15px solid rgba(255, 252, 252, .6);
+  border: .5rem solid rgba(255, 252, 252, .6);
 }
 
 .main .land-text {
-  font-size: 45px;
+  font-size: 1rem;
   color: #fff;
-  margin-top: 55px; 
+  margin-top: 1rem; 
 }
 .main .land-description {
   color: #fff;
-  font-size: 35px;
-  width: 840px;
+  font-size: .8rem;
+  /* width: 840px; */
   text-align: center;
-  margin-top: 40px;
+  margin-top: 1rem;
+  padding: 0 2rem 2rem 2rem;
 }
 </style>

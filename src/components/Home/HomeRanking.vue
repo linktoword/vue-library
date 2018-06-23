@@ -71,9 +71,9 @@
 
  .HR-wapper .HR-top ul li {
    list-style: none;
-   font-size: 30px;
+   font-size: 1rem;
    border-right: 2px solid rgb(177 , 177, 177);
-   padding:  0 10px; 
+   padding:  0 1rem; 
    color: rgb(102, 102, 102);
  }
 
@@ -89,35 +89,37 @@
 
  .wapper {
    display: flex;
-   height: 376px;
+   /* height: 375px; */
    width: 100%;
    position: relative;
-   margin-bottom: 10px;
-   padding-top: 15px;
+   margin-bottom: .1rem;
+   padding-top: .5rem;
    background: white;   
    /* box-shadow: 0 2px 0 10px #eee; */
  }
 
  .pic,
  .pic img {
-   border-radius: 20px;
-   margin-left: 20px;
+   width: 7rem;
+   height: auto;
+   border-radius: .6rem;
+   margin-left: .2rem;
  }
  .title {
    color: rgb(51, 51, 51);
-   font-weight: 700;
-   font-size: 40px;
-   margin-bottom: 10px;
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: .4rem;
  }
 
  .wapper .text {
    display: flex;
    flex-flow: column;
-   margin: 70px 0 0 60px;
+   margin: .5rem 0 0 2rem;
  }
 
  .wapper .text .title {
-   width: 320px;
+   width: 10rem;
    text-overflow:ellipsis; /* 表示文本超出用省略号代替 */
    white-space:nowrap;  /* 表示文本不换行 */
    overflow:hidden;   /* 表示超出隐藏 */
@@ -126,26 +128,27 @@
  .wapper .text  .commond {
    display: flex;
    align-items: center;
-   margin: 0 0 10px 0;
+   margin: 0 0 .5rem 0;
  }
  .wapper .text  .commond i {
+   font-size: 1.5rem;
       color: rgb(77, 161, 255);
-      margin-right: 15px; 
+      margin-right: 1rem; 
  }
 .wapper .text  .commond div {
-  font-size: 30px;
+  font-size: 1rem;
   color: rgb(153, 153, 153);
 }
 
 .wapper .sequence {
-  width: 100px;
-  height: 100px;
+  width: 2.5rem;
+  height: 2.5rem;
   /* background: rgb(233, 233, 233); */
   border-bottom-left-radius: 100%;
   text-align: center;
-  line-height: 100px;
+  line-height: 2.5rem;
   color: rgb(255, 255, 255);
-  font-size: 50px;
+  font-size: 1.5rem;
   font-weight: bolder;
   position: absolute;
   top: 0;

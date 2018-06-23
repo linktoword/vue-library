@@ -16,12 +16,14 @@
 </template>
 <style scoped>
   .story-wapper {
-    height: 300px;
+    /* height: 300px; */
     /* border: 1px solid red; */
     display: flex;
   }
   .story-wapper .item {
     flex: auto;
+    /* width: 20%; */
+    margin: .2rem 1rem;
     display: flex;
     flex-direction: column;
 
@@ -32,10 +34,13 @@
 
   }
   .story-wapper .item img {
+    width: 88%;
+    height: auto;
     border-radius: 50%;
   }
 
   .story-wapper .item .text {
-    font-size: 35px;
+    font-size: 1rem;
+    margin-top: .5rem;
   }
 </style>

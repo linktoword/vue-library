@@ -1,5 +1,5 @@
 <template>
-<mu-appbar title="轻小说" class="story-search">
+<mu-appbar class="story-search">
   <mu-text-field icon="search" class="appbar-search-field"  slot="right" hintText="请输入搜索内容"/>
   <mu-flat-button color="white" label="Search" slot="right"/>
 </mu-appbar>
@@ -16,6 +16,7 @@
   content: "";
 }
 .appbar-search-field{
+  // width: 100%;
   color: #FFF;
   margin-bottom: 0;
   &.focus-state {

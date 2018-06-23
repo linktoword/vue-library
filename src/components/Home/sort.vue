@@ -122,9 +122,9 @@
   width: 33%;
   flex: 0 1 auto;
   text-align: center;
-  padding: 15px;
-  font-size: 20px;
-  font-weight: 600;
+  padding: .5rem;
+  font-size: 1rem;
+  /* font-weight: 600; */
 }
 
 .sort-warpper .sort-list-item img {

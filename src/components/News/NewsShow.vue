@@ -28,42 +28,50 @@
       NewsShowLists: Array,
       time: String
       }
-
   }
 
 </script>
 
 <style scoped>
+.wapper {
+  width: 100%;
+}
 .wapper .time {
   background: rgb(244, 244, 244);
-  height: 85px;
-  font-size: 40px;
-  line-height: 85px;
-  padding-left: 35px;
+  font-size: 1rem;
+  padding-left: 1rem;
 }
 
 .wapper .content {
   display: flex;
   width: 100%;
-  height: 252px;
-  margin: 25px 45px 30px 0px;  
+  padding: .5rem 0;
 }
 
 .wapper .content img {
-  width: 360px;
-  height: 252px;
-  margin: 0 45px 0 15px;
+  width: 10rem;
+  height: 6.5rem;
+  margin: 0 1rem 0 .3rem;
   border-radius: 10px;
 }
 
 .wapper .content .text {
+  width: 100%;
   display: flex;
   flex-flow: column;
-  font-size: 35px;
+  /* align-items:  */
+  font-size: 1rem;
   justify-content: space-between;
   font-weight: bold;
   letter-spacing: 1px;
+  position: relative;
 }
+
+/* .wapper .content .text .title {
+  position: absolute;
+  right: 0;
+  top: 0;
+} */
 
 .wapper .content .text .bottom {
   display: flex;
@@ -76,23 +84,24 @@
 }
 
 .wapper .content .text .bottom .left img {
-  width: 60px;
-  height: 60px;
+  width: 1.3rem;
+  height: 1.3rem;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 1rem;
 }
 .wapper .content .text .bottom .left div {
-  height: 60px;
-  line-height: 60px;
+  /* height: 60px;
+  line-height: 60px; */
   color: rgb(102, 102, 102);
+  font-size: .8rem;
 }
 .wapper .content .text .bottom .right {
-  font-size: 40px;
+  font-size: 1rem;
   margin-right: 15px;
   color: rgb(153, 153, 153);
 }
 .wapper .content .text .bottom .right i {
-  font-size: 40px;
+  font-size: 1rem;
 }
 
 </style>

@@ -43,7 +43,7 @@ import StoryShow from './components/Story/StoryShow'
 /* 搜索栏flex定位  占位 不让下方被遮挡*/
 .search-height {
   width: 100%;
-  height: 64px;
+  height: 55px;
 }
 .zhanwei {
   height: 60px;

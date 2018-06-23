@@ -14,25 +14,25 @@
             id: 1,
             url: '/src/assets/Me/me_02.png',
             text: '小说订阅',
-            size: 70
+            size: 30
           },
           {
             id: 2,
             url: '/src/assets/Me/me_03.png',
             text: '浏览记录',
-            size: 70
+            size: 30
           },
           {
             id: 3,
             url: '/src/assets/Me/me_04.png',
             text: '小说下载',
-            size: 70
+            size: 30
           },
           {
             id: 4,
             url: '/src/assets/Me/me_05.png',
             text: '小说评论',
-            size: 70
+            size: 30
           }
         ]
       }
